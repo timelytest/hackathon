@@ -22,4 +22,6 @@ public class WelcomeActivity extends AppCompatActivity {
         LoginService loginService = (LoginService) HttpUtil.getService("http://106.15.177.146:8081/", LoginService.class);
         HttpUtil.dealCall(loginService.sayHello(), new LoginCommand(textView));
     }
+
+
 }
