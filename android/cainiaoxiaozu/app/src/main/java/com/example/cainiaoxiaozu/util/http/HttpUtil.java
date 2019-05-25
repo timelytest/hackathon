@@ -12,6 +12,12 @@ import retrofit2.Retrofit;
 
 public class HttpUtil {
 
+    /**
+     * 得到需要的服务接口
+     * @param baseUrl baseUrl
+     * @param clazz 接口.class
+     * @return 接口，需要强制转换
+     */
     public static Object getService(String baseUrl, Class clazz){
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(baseUrl)
@@ -19,6 +25,11 @@ public class HttpUtil {
         return retrofit.create(clazz);
     }
 
+    /**
+     * 接口的返回类型只能Call<ResponseBody>,然后将该返回值交到这里处理
+     * @param call 接口的返回类型
+     * @param command 得到返回值后需要做的事情，{@link BaseCommand}
+     */
     public static void dealCall(Call<ResponseBody> call, BaseCommand command){
         call.enqueue(new Callback<ResponseBody>() {
             @Override
