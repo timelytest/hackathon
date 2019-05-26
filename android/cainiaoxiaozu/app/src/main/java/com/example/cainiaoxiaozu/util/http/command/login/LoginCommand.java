@@ -1,23 +1,22 @@
-package com.example.cainiaoxiaozu.util.http.command;
+package com.example.cainiaoxiaozu.util.http.command.login;
 
-import android.widget.TextView;
+import com.example.cainiaoxiaozu.util.http.command.BaseCommand;
 
 public class LoginCommand extends BaseCommand {
 
-    private TextView textView;
-
     public LoginCommand(Object... objects){
         super(objects);
-        textView = (TextView) objects[0];
+        //需要操作的组件
+
     }
 
     @Override
     public void success(String body) {
-        textView.setText(body);
+        //具体操作
     }
 
     @Override
     public void failure(Throwable t) {
-        textView.setText(t.getLocalizedMessage());
+
     }
 }

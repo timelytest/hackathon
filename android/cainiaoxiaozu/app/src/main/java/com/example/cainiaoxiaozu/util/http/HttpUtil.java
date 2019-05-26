@@ -12,13 +12,14 @@ import retrofit2.Retrofit;
 
 public class HttpUtil {
 
+    private static String baseUrl = "http://106.15.177.146:8081/";
+
     /**
      * 得到需要的服务接口
-     * @param baseUrl baseUrl
      * @param clazz 接口.class
      * @return 接口，需要强制转换
      */
-    public static Object getService(String baseUrl, Class clazz){
+    public static Object getService(Class clazz){
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(baseUrl)
                 .build();
