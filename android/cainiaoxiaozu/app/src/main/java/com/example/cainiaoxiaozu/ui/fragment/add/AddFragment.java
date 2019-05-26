@@ -7,12 +7,20 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 
 import com.example.cainiaoxiaozu.R;
+import com.example.cainiaoxiaozu.model.Question;
 import com.example.cainiaoxiaozu.model.QuestionPublishBean;
+import com.example.cainiaoxiaozu.ui.activity.login.LoginActivity;
+import com.example.cainiaoxiaozu.util.http.HttpUtil;
+import com.example.cainiaoxiaozu.util.http.command.login.LoginCommand;
+import com.example.cainiaoxiaozu.util.http.command.question.PublishQuestionCommand;
+import com.example.cainiaoxiaozu.util.http.services.LoginService;
+import com.example.cainiaoxiaozu.util.http.services.QuestionService;
 
 public class AddFragment extends Fragment {
     private static final String TAG = "fragment_add";
@@ -22,6 +30,7 @@ public class AddFragment extends Fragment {
     private EditText mTextTitle;
     private EditText mTextContent;
     private EditText mTextReward;
+    private Button mButtonSubmmit;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -39,12 +48,21 @@ public class AddFragment extends Fragment {
         mTextTitle = view.findViewById(R.id.editText1);
         mTextContent = view.findViewById(R.id.editText);
         mTextReward = view.findViewById(R.id.editText2);
+        mButtonSubmmit = view.findViewById(R.id.button);
 
-        QuestionPublishBean questionPublishBean = new QuestionPublishBean();
+        //QuestionPublishBean questionPublishBean = new QuestionPublishBean("type", mTextContent.getText().toString(), mTextTitle.getText().toString(), Double.valueOf(mTextReward.getText().toString()));
+QuestionPublishBean questionPublishBean = new QuestionPublishBean();
 
-
-
+        mButtonSubmmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                QuestionService questionService = (QuestionService) HttpUtil.getService(QuestionService.class);
+                HttpUtil.dealCall((questionService.publishQuestion(questionPublishBean, null)), new PublishQuestionCommand(AddFragment.this));
+            }
+        });
 
         return view;
     }
+
+
 }

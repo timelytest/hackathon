@@ -61,6 +61,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/text_acheieve"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_marginTop="20dp"
@@ -85,7 +86,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="10dp"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/me_1"
@@ -99,12 +100,11 @@
         <TextView
             android:id="@+id/me_2"
             android:layout_width="wrap_content"
-            android:layout_marginLeft="20dp"
             android:layout_height="40dp"
             android:layout_marginTop="20dp"
-            android:textColor="#7A7979"
             android:text="回答记录"
-            android:textSize="24sp" />
+            android:textStyle="bold"
+            android:textSize="32sp" />
 
 
     </LinearLayout>

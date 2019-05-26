@@ -8,9 +8,13 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.cainiaoxiaozu.R;
+import com.example.cainiaoxiaozu.model.Question;
 import com.example.cainiaoxiaozu.util.http.HttpUtil;
 import com.example.cainiaoxiaozu.util.http.command.login.LoginCommand;
+import com.example.cainiaoxiaozu.util.http.command.question.QuestionAnswerCommand;
 import com.example.cainiaoxiaozu.util.http.services.LoginService;
+import com.example.cainiaoxiaozu.util.http.services.QuestionService;
+import com.example.cainiaoxiaozu.util.http.services.RecommendService;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -34,6 +38,10 @@ public class LoginActivity extends AppCompatActivity {
         mButtonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                //RecommendService recommendService = (RecommendService) HttpUtil.getService(RecommendService.class);
+                //HttpUtil.dealCall(recommendService.getTopRewordUserListOverall(), new QuestionAnswerCommand(LoginActivity.class, mTextViewEmail));
+
                 LoginService loginService = (LoginService) HttpUtil.getService(LoginService.class);
                 HttpUtil.dealCall((loginService.login(mTextViewEmail.getText().toString(), mTextViewPassword.getText().toString())), new LoginCommand(LoginActivity.this));
             }

@@ -34,6 +34,8 @@ public class ZoneFragment extends Fragment {
         scrollView = view.findViewById(R.id.zone_recycler);
         scrollView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
+
+
         return view;
     }
 }

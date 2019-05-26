@@ -62,18 +62,19 @@ public class SearchActivity extends AppCompatActivity{
         mSearchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-                return false;
+                QuestionService questionService = (QuestionService) HttpUtil.getService(QuestionService.class);
+                HttpUtil.dealCall((questionService.listQuestionListByKeyword(query)), new LoginCommand(SearchActivity.this, listView));
+                return true;
             }
 
             @Override
             public boolean onQueryTextChange(String newText) {
 
-                QuestionService questionService = (QuestionService) HttpUtil.getService(QuestionService.class);
-                HttpUtil.dealCall((questionService.listQuestionListByKeyword(newText)), new LoginCommand(SearchActivity.this, listView, adapter));
 
 
 
-                return true;
+
+                return false;
             }
         });
 

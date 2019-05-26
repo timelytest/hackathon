@@ -51,7 +51,7 @@ public class LoginCommand extends BaseCommand {
 //        HttpUtil.dealCall((loginService.register(partBody)), new RegisterCommand(context));
 
 
-        Intent intent = new Intent(context, HomeFragment.class);
+        Intent intent = new Intent(context, HomeActivity.class);
         context.startActivity(intent);
     }
 

@@ -33,7 +33,8 @@ public class HomeFragment extends Fragment {
     private BGABanner bgaBanner;
 
     private HorizontalScrollView hsf;
-    private GridView gv;
+    private GridView gv1;
+    private GridView gv2;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -68,7 +69,7 @@ public class HomeFragment extends Fragment {
 
     private void initHorizontal(View view){
         hsf = view.findViewById(R.id.home_1_view);
-        gv = view.findViewById(R.id.home_1_grid);
+        gv1 = view.findViewById(R.id.home_1_grid);
 
         List<DataItem> list = new ArrayList<>();
         list.add(new DataItem("1"));
@@ -86,15 +87,15 @@ public class HomeFragment extends Fragment {
 
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                 gridviewWidth, LinearLayout.LayoutParams.FILL_PARENT);
-        gv.setLayoutParams(params); // 设置GirdView布局参数,横向布局的关键
-        gv.setColumnWidth(itemWidth); // 设置列表项宽
-        gv.setHorizontalSpacing(40); // 设置列表项水平间距
-        gv.setStretchMode(GridView.NO_STRETCH);
-        gv.setNumColumns(size); // 设置列数量=列表集合数
+        gv1.setLayoutParams(params); // 设置GirdView布局参数,横向布局的关键
+        gv1.setColumnWidth(itemWidth); // 设置列表项宽
+        gv1.setHorizontalSpacing(40); // 设置列表项水平间距
+        gv1.setStretchMode(GridView.NO_STRETCH);
+        gv1.setNumColumns(size); // 设置列数量=列表集合数
 
         GridViewAdapter adapter = new GridViewAdapter(getActivity(),
                 list);
-        gv.setAdapter(adapter);
+        gv1.setAdapter(adapter);
     }
 
     private class GridViewAdapter extends BaseAdapter{

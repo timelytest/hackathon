@@ -118,7 +118,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="230dp"
+        android:layout_height="170dp"
         android:layout_marginTop="10dp"
         android:orientation="vertical">
 
@@ -145,6 +145,8 @@
         android:background="#E91E63"
         android:text="提交"
         android:textSize="24sp"
-        android:textColor="#FFFCFD" />
+        android:textColor="#FFFCFD"
+        android:layout_marginBottom="180dp"/>
+
 
 </LinearLayout>
