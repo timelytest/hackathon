@@ -15,10 +15,10 @@ public interface QuestionService {
     /**
      * 按分类获取问题列表
      * @param type 分类
-     * @return
+     * @return Call<ResponseBody>
      */
     @POST("/question/list/type")
-    Call<ResponseBody> listQuestionByCategory(@Query("type") String type);
+    Call<ResponseBody> listQuestionByType(@Query("type") String type);
 
     /**
      * 按关键字获取问题列表
@@ -26,7 +26,7 @@ public interface QuestionService {
      * @return Call<ResponseBody>
      */
     @POST("/question/list/keyword")
-    Call<ResponseBody> listQuestionByRecommendation(@Query("keyword") String keyword);
+    Call<ResponseBody> listQuestionListByKeyword(@Query("keyword") String keyword);
 
     /**
      * 回答问题
@@ -37,14 +37,9 @@ public interface QuestionService {
     @POST("/question/answer")
     Call<ResponseBody> answerQuestion(@Query("questionId") String questionId, @Query("content") String content);
 
-    /**
-     * 修改问题
-     * @param questionId 问题Id
-     * @param content 问题详情
-     * @return Call<ResponseBody>
-     */
-    @POST("/question/modify")
-    Call<ResponseBody> modifyQuestion(@Query("questionId") String questionId, @Query("content") String content);
+    @POST("/answer/list")
+    // 查看所有回答过的问题
+    Call<ResponseBody> getAnswerList();
 
     /**
      * 发布任务
@@ -63,4 +58,8 @@ public interface QuestionService {
      */
     @POST("/question/adopt")
     Call<ResponseBody> adoptQuestion(@Query("questionId") int questionId, @Query("answerId") int answerId);
+
+    @POST("/list/publish")
+    // 查看发布过的问题
+    Call<ResponseBody> getQuestionList();
 }
