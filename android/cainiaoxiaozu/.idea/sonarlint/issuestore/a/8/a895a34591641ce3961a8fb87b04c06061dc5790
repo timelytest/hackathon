@@ -1,0 +1,10 @@
+
+isquid:CommentedOutCodeLineE"<This block of commented-out lines of code should be removed.(£ìÍ·8Ì›ó˜¯-
+isquid:CommentedOutCodeLineI"<This block of commented-out lines of code should be removed.(Ú†Æá8Ì›ó˜¯-
+msquid:S1858d"J"newText" is already a string, there's no need to call "toString()" on it.(äÖì¹øÿÿÿÿ8Çßÿ˜¯-
+csquid:UselessImportCheck
+"8Remove this unused import 'android.view.LayoutInflater'.(À¯ÑÇ8Æñœ™¯-
+}squid:S1450"ZRemove the "msearchView" field and declare it as a local variable in the relevant methods.(õùÓÉûÿÿÿÿ8Ëðæ˜¯-
+nsquid:CommentedOutCodeLineB"<This block of commented-out lines of code should be removed.(ô¨ÓÉÿÿÿÿÿ8Ì›ó˜¯-
+_squid:UselessImportCheck"4Remove this unused import 'android.content.Context'.(©Ê‰è8Æñœ™¯-
+hsquid:UselessImportCheck"=Remove this unused import 'android.support.v7.app.ActionBar'.(¬­çô8­ùö˜¯-
