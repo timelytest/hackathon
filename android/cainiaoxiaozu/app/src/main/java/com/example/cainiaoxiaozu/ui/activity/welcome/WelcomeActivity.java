@@ -28,4 +28,6 @@ public class WelcomeActivity extends AppCompatActivity {
         animationView.setAnimation("72-favourite-app-icon.json");
         animationView.playAnimation();
     }
+
+
 }
