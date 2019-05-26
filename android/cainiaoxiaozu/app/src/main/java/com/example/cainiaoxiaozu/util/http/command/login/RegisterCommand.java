@@ -12,6 +12,8 @@ public class RegisterCommand extends BaseCommand {
     @Override
     public void success(String body) {
         //具体操作
+
+        int a = 0;
     }
 
     @Override

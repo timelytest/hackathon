@@ -1,5 +1,0 @@
-
-Jsquid:S1068".Remove this unused "scrollView" private field.(Ïà†‰ùÿÿÿÿ
->squid:S1068"'Remove this unused "TAG" private field.(«ó¿—
->squid:S1185"(Remove this method to simply inherit it.(¥Ë©
-usquid:S1450"YRemove the "scrollView" field and declare it as a local variable in the relevant methods.(Ïà†‰ùÿÿÿÿ

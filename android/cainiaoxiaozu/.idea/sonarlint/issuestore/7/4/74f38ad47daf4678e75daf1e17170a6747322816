@@ -1,0 +1,4 @@
+
+wsquid:S1450"[Remove the "mButtonLogin" field and declare it as a local variable in the relevant methods.(Ω»κϋÿÿÿÿ
+Jsquid:S1068"3Remove this unused "mButtonRegister" private field.(§οκ
+usquid:S1450"^Remove the "mButtonRegister" field and declare it as a local variable in the relevant methods.(§οκ
