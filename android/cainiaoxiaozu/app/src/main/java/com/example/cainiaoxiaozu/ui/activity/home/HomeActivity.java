@@ -65,8 +65,8 @@ public class HomeActivity extends AppCompatActivity {
         mFragments.add(new HomeFragment());
         mFragments.add(new BulbFragment());
         mFragments.add(new AddFragment());
-        mFragments.add(new MeFragment());
         mFragments.add(new ZoneFragment());
+        mFragments.add(new MeFragment());
     }
 
     private void setFragment(int position) {
