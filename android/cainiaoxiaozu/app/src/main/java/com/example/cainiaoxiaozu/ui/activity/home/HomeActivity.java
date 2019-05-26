@@ -3,18 +3,17 @@ package com.example.cainiaoxiaozu.ui.activity.home;
 import android.os.Bundle;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.annotation.NonNull;
 import android.view.MenuItem;
 
 import com.example.cainiaoxiaozu.R;
-import com.example.cainiaoxiaozu.ui.fragment.AddFragment;
-import com.example.cainiaoxiaozu.ui.fragment.BulbFragment;
-import com.example.cainiaoxiaozu.ui.fragment.HomeFragment;
-import com.example.cainiaoxiaozu.ui.fragment.MeFragment;
 import com.example.cainiaoxiaozu.ui.fragment.ZoneFragment;
+import com.example.cainiaoxiaozu.ui.fragment.add.AddFragment;
+import com.example.cainiaoxiaozu.ui.fragment.bulb.BulbFragment;
+import com.example.cainiaoxiaozu.ui.fragment.home.HomeFragment;
+import com.example.cainiaoxiaozu.ui.fragment.me.MeFragment;
 
 import java.util.ArrayList;
 import java.util.List;
