@@ -9,7 +9,7 @@ import android.support.annotation.NonNull;
 import android.view.MenuItem;
 
 import com.example.cainiaoxiaozu.R;
-import com.example.cainiaoxiaozu.ui.fragment.ZoneFragment;
+import com.example.cainiaoxiaozu.ui.fragment.zone.ZoneFragment;
 import com.example.cainiaoxiaozu.ui.fragment.add.AddFragment;
 import com.example.cainiaoxiaozu.ui.fragment.bulb.BulbFragment;
 import com.example.cainiaoxiaozu.ui.fragment.home.HomeFragment;
