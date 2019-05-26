@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_48dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_lightbulb"
+        android:icon="@drawable/ic_lightbulb_outline_black_48dp"
+        android:title="@string/title_lightbulb" />
+
+    <item
+        android:id="@+id/navigation_add"
+        android:icon="@drawable/ic_add_circle_outline_black_48dp"
+        android:title="@string/title_add" />
+
+    <item
+        android:id="@+id/navigation_zone"
+        android:icon="@drawable/ic_star_black_48dp"
+        android:title="@string/title_zone" />
+
+    <item
+        android:id="@+id/navigation_me"
+        android:icon="@drawable/ic_people_black_48dp"
+        android:title="@string/title_me" />
+
+</menu>

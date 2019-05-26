@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">CaiNiaoXiaoZu</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home"></string>
+    <string name="title_lightbulb"></string>
+    <string name="title_add"></string>
+    <string name="title_zone"></string>
+    <string name="title_me"></string>
 </resources>
