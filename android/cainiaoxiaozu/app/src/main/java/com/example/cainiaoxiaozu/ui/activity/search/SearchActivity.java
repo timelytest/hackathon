@@ -13,6 +13,7 @@ import com.example.cainiaoxiaozu.ui.activity.login.LoginActivity;
 import com.example.cainiaoxiaozu.util.http.HttpUtil;
 import com.example.cainiaoxiaozu.util.http.command.login.LoginCommand;
 import com.example.cainiaoxiaozu.util.http.services.LoginService;
+import com.example.cainiaoxiaozu.util.http.services.QuestionService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -67,18 +68,11 @@ public class SearchActivity extends AppCompatActivity{
             @Override
             public boolean onQueryTextChange(String newText) {
 
-                LoginService loginService = (LoginService) HttpUtil.getService(LoginService.class);
-                //HttpUtil.dealCall((loginService.register(mTextViewEmail.getText().toString(), mTextViewPassword.getText().toString())), new LoginCommand(LoginActivity.this));
+                QuestionService questionService = (QuestionService) HttpUtil.getService(QuestionService.class);
+                HttpUtil.dealCall((questionService.listQuestionListByKeyword(newText)), new LoginCommand(SearchActivity.this, listView, adapter));
 
 
-                if(adapter instanceof Filterable){
-                    Filter filter = ((Filterable)adapter).getFilter();
-                    if(newText==null || newText.length()==0){
-                        filter.filter(null);
-                    }else{
-                        filter.filter(newText);
-                    }
-                }
+
                 return true;
             }
         });

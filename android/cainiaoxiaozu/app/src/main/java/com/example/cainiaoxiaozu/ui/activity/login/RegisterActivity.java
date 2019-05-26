@@ -15,6 +15,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.cainiaoxiaozu.R;
+import com.example.cainiaoxiaozu.model.RegisterBean;
 import com.example.cainiaoxiaozu.util.http.HttpUtil;
 import com.example.cainiaoxiaozu.util.http.command.login.LoginCommand;
 import com.example.cainiaoxiaozu.util.http.services.LoginService;
@@ -69,8 +70,12 @@ public class RegisterActivity extends AppCompatActivity implements
                 break;
 
             case R.id.button_register:
+
+                RegisterBean registerBean = new RegisterBean(mTextEmail.getText().toString(), mTextUserName.getText().toString(), mTextPassword.getText().toString(),
+                        mTextSchool.getText().toString(), mTextStudentId.getText().toString(), mTextGrade.getText().toString(), mTextMajor.getText().toString());
+
                 LoginService loginService = (LoginService) HttpUtil.getService(LoginService.class);
-                //HttpUtil.dealCall((loginService.login(mTextViewEmail.getText().toString(), mTextViewPassword.getText().toString())), new LoginCommand(LoginActivity.this));
+                HttpUtil.dealCall((loginService.register(registerBean, null)), new LoginCommand(RegisterActivity.this));
 
                 break;
 
