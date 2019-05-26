@@ -9,6 +9,10 @@ import android.widget.ListView;
 import android.widget.SearchView;
 
 import com.example.cainiaoxiaozu.R;
+import com.example.cainiaoxiaozu.ui.activity.login.LoginActivity;
+import com.example.cainiaoxiaozu.util.http.HttpUtil;
+import com.example.cainiaoxiaozu.util.http.command.login.LoginCommand;
+import com.example.cainiaoxiaozu.util.http.services.LoginService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,7 +35,7 @@ public class SearchActivity extends AppCompatActivity{
 
         listView = (ListView) findViewById(R.id.listView);
 
-        String[]arr_data= {"ata1","data2","data3"};
+        String[]arr_data= {""};
         adapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1 , arr_data);
 
@@ -62,6 +66,10 @@ public class SearchActivity extends AppCompatActivity{
 
             @Override
             public boolean onQueryTextChange(String newText) {
+
+                LoginService loginService = (LoginService) HttpUtil.getService(LoginService.class);
+                //HttpUtil.dealCall((loginService.register(mTextViewEmail.getText().toString(), mTextViewPassword.getText().toString())), new LoginCommand(LoginActivity.this));
+
 
                 if(adapter instanceof Filterable){
                     Filter filter = ((Filterable)adapter).getFilter();
