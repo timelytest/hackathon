@@ -77,7 +77,7 @@ public class HomeFragment extends Fragment {
         list.add(new DataItem("4"));
 
         int size = list.size();
-        int length = 100;
+        int length = 140;
         DisplayMetrics dm = new DisplayMetrics();
         getActivity().getWindowManager().getDefaultDisplay().getMetrics(dm);
         float density = dm.density;
@@ -88,7 +88,7 @@ public class HomeFragment extends Fragment {
                 gridviewWidth, LinearLayout.LayoutParams.FILL_PARENT);
         gv.setLayoutParams(params); // 设置GirdView布局参数,横向布局的关键
         gv.setColumnWidth(itemWidth); // 设置列表项宽
-        gv.setHorizontalSpacing(5); // 设置列表项水平间距
+        gv.setHorizontalSpacing(40); // 设置列表项水平间距
         gv.setStretchMode(GridView.NO_STRETCH);
         gv.setNumColumns(size); // 设置列数量=列表集合数
 
@@ -127,7 +127,7 @@ public class HomeFragment extends Fragment {
             TextView tvCity = convertView.findViewById(R.id.text_view);
             DataItem city = list.get(position);
 
-            tvCity.setText(city.getAction());
+            //tvCity.setText(city.getAction());
             return convertView;
         }
     }
