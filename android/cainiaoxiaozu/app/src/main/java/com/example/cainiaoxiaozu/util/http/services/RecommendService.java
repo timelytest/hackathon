@@ -3,27 +3,23 @@ package com.example.cainiaoxiaozu.util.http.services;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.POST;
 
 public interface RecommendService {
 
-    /**
-     * 首页
-     * @return
-     */
-    @GET("/index/recommmend")
-    Call<ResponseBody> getFirstPage();
+    // 返回标签数组
+    @POST("/recommend/type")
+    Call<ResponseBody> getTypeList();
 
-    /**
-     * 问题推荐
-     * @return List<Question>
-     */
-    @GET("/index/recommend/questions")
-    Call<ResponseBody> getQuestionCommend();
+    // 返回全局累积获得积分最高的十个人
+    @POST("/topRewardUser/overall")
+    Call<ResponseBody> getTopRewordUserListOverall();
 
-    /**
-     * 辅导推荐
-     * @return List<Teach>
-     */
-    @GET("/index/recommend/teaches")
-    Call<ResponseBody> getTeachesCommend();
+    // 返回本地累积获得积分最高的十个人
+    @POST("/topRewardUser/locally")
+    Call<ResponseBody> getTopRewardUserListLocally();
+
+    // 返回最近得到回复解决的十个问题
+    @POST("/topResolvedQuestion")
+    Call<ResponseBody>getLatestResolvedQuestionList();
 }

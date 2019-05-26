@@ -1,5 +1,7 @@
 package com.example.cainiaoxiaozu.util.http.services;
 
+import com.example.cainiaoxiaozu.model.RegisterBean;
+
 import okhttp3.MultipartBody;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
@@ -24,5 +26,5 @@ public interface LoginService {
      */
     @Multipart
     @POST("/user/register")
-    Call<ResponseBody> register(@Part MultipartBody.Part file);
+    Call<ResponseBody> register(@Query("registerBean") RegisterBean registerBean, @Part("file") MultipartBody.Part file);
 }

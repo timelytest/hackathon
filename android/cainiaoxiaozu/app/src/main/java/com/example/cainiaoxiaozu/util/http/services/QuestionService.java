@@ -1,54 +1,66 @@
 package com.example.cainiaoxiaozu.util.http.services;
 
-import com.example.cainiaoxiaozu.model.User;
+import com.example.cainiaoxiaozu.model.QuestionPublishBean;
 
-import java.net.ResponseCache;
-
+import okhttp3.MultipartBody;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.POST;
+import retrofit2.http.Part;
 import retrofit2.http.Query;
 
 public interface QuestionService {
 
     /**
-     * 按分类获取分类列表
-     * @param category 分类
+     * 按分类获取问题列表
+     * @param type 分类
      * @return
      */
-    @POST("/question/category")
-    Call<ResponseBody> listQuestionByCategory(@Query("category") String category);
+    @POST("/question/list/type")
+    Call<ResponseBody> listQuestionByCategory(@Query("type") String type);
 
     /**
-     * 按推荐获取分类列表
-     * @param userId 用户id
-     * @return
+     * 按关键字获取问题列表
+     * @param keyword 关键字
+     * @return Call<ResponseBody>
      */
-    @POST("/question/recommendation")
-    Call<ResponseBody> listQuestionByRecommendation(@Query("userId") int userId);
+    @POST("/question/list/keyword")
+    Call<ResponseBody> listQuestionByRecommendation(@Query("keyword") String keyword);
 
     /**
      * 回答问题
-     * @param user
-     * @return
+     * @param questionId 问题Id
+     * @param content 回答详情
+     * @return Call<ResponseBody>
      */
     @POST("/question/answer")
-    Call<ResponseBody> answerQuestion(@Body User user);
+    Call<ResponseBody> answerQuestion(@Query("questionId") String questionId, @Query("content") String content);
 
     /**
-     * 修改回答
-     * @param user
-     * @return
+     * 修改问题
+     * @param questionId 问题Id
+     * @param content 问题详情
+     * @return Call<ResponseBody>
      */
     @POST("/question/modify")
-    Call<ResponseBody> modifyQuestion(@Body User user);
+    Call<ResponseBody> modifyQuestion(@Query("questionId") String questionId, @Query("content") String content);
 
     /**
      * 发布任务
-     * @param user
-     * @return
+     * @param questionPublishBean 问题详情
+     * @param file 图片
+     * @return Call<ResponseBody>
      */
     @POST("/question/publish")
-    Call<ResponseBody> publishQuestion(@Body User user);
+    Call<ResponseBody> publishQuestion(@Body QuestionPublishBean questionPublishBean, @Part("file") MultipartBody.Part file);
+
+    /**
+     * 采纳回答
+     * @param questionId 问题Id
+     * @param answerId 回答Id
+     * @return Call<ResponseBody>
+     */
+    @POST("/question/adopt")
+    Call<ResponseBody> adoptQuestion(@Query("questionId") int questionId, @Query("answerId") int answerId);
 }
