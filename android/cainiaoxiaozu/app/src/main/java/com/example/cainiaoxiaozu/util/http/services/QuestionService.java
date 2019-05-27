@@ -43,12 +43,10 @@ public interface QuestionService {
 
     /**
      * 发布任务
-     * @param questionPublishBean 问题详情
-     * @param file 图片
      * @return Call<ResponseBody>
      */
     @POST("/question/publish")
-    Call<ResponseBody> publishQuestion(@Body QuestionPublishBean questionPublishBean, @Part("file") MultipartBody.Part file);
+    Call<ResponseBody> publishQuestion(@Query("type") String type,@Query("title") String title, @Query("content") String content, @Query("reward") double reward, @Part("file") MultipartBody.Part file);
 
     /**
      * 采纳回答

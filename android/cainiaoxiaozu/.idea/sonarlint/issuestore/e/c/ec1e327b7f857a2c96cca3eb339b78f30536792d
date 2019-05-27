@@ -1,0 +1,19 @@
+
+>squid:S1185("(Remove this method to simply inherit it.(¥Ë©
+tsquid:S1450!"XRemove the "bgaBanner" field and declare it as a local variable in the relevant methods.(Çà¨èûÿÿÿÿ
+Ksquid:S1068 "/Remove this unused "frameLayout" private field.(Éàú–úÿÿÿÿ
+Fsquid:S1481")Remove this unused "city" local variable.(‹€‘”úÿÿÿÿ
+Jsquid:S1068%"'Remove this unused "gv2" private field.(Æ–‘¢úÿÿÿÿ8µƒí¬¯-
+csquid:CommentedOutCodeLineƒ"<This block of commented-out lines of code should be removed.(ÁˆæÁ
+>squid:S16043"(Make this anonymous inner class a lambda(ñÓÊ\
+Usquid:S1854"8Remove this useless assignment to local variable "city".(‹€‘”úÿÿÿÿ
+Hsquid:S1481€"+Remove this unused "tvCity" local variable.(Ãı°şÿÿÿÿ
+dsquid:S1226"HIntroduce a new variable instead of reusing the parameter "convertView".(‡ª«òıÿÿÿÿ
+vsquid:S1450 "ZRemove the "frameLayout" field and declare it as a local variable in the relevant methods.(Éàú–úÿÿÿÿ
+Wsquid:S1854€":Remove this useless assignment to local variable "tvCity".(Ãı°şÿÿÿÿ
+Csquid:S1068#"'Remove this unused "hsf" private field.(ÒšÇİûÿÿÿÿ
+isquid:S00117h"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®ÑÒ¶
+nsquid:S1450#"RRemove the "hsf" field and declare it as a local variable in the relevant methods.(ÒšÇİûÿÿÿÿ
+usquid:S1450$"RRemove the "gv1" field and declare it as a local variable in the relevant methods.(óĞ«®úÿÿÿÿ8µƒí¬¯-
+isquid:S00117h"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®ÑÒ¶
+>squid:S1068"'Remove this unused "TAG" private field.(¯ÖÈ

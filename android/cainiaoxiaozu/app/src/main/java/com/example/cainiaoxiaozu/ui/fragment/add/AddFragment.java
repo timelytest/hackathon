@@ -50,14 +50,14 @@ public class AddFragment extends Fragment {
         mTextReward = view.findViewById(R.id.editText2);
         mButtonSubmmit = view.findViewById(R.id.button);
 
-        //QuestionPublishBean questionPublishBean = new QuestionPublishBean("type", mTextContent.getText().toString(), mTextTitle.getText().toString(), Double.valueOf(mTextReward.getText().toString()));
-QuestionPublishBean questionPublishBean = new QuestionPublishBean();
+
+        //QuestionPublishBean questionPublishBean = new QuestionPublishBean();
 
         mButtonSubmmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 QuestionService questionService = (QuestionService) HttpUtil.getService(QuestionService.class);
-                HttpUtil.dealCall((questionService.publishQuestion(questionPublishBean, null)), new PublishQuestionCommand(AddFragment.this));
+                HttpUtil.dealCall((questionService.publishQuestion("type", mTextContent.getText().toString(), mTextTitle.getText().toString(), Double.valueOf(mTextReward.getText().toString()),null)), new PublishQuestionCommand(AddFragment.this));
             }
         });
 

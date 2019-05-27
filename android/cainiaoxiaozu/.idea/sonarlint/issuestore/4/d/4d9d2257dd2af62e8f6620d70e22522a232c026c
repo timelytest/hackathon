@@ -1,0 +1,7 @@
+
+Lsquid:S1068"0Remove this unused "linearLayout" private field.(Ãîìêúÿÿÿÿ
+>squid:S1185"(Remove this method to simply inherit it.(¥Ë©
+wsquid:S1450"[Remove the "linearLayout" field and declare it as a local variable in the relevant methods.(Ãîìêúÿÿÿÿ
+Msquid:S1068"/Remove this unused "mScrollView" private field.(ªÙ‚ƒ8âþ¸¬¯-
+dsquid:UselessImportCheck"4Remove this unused import 'android.widget.TextView'.(„Ë‚ˆÿÿÿÿÿ8—¯¶¬¯-
+>squid:S1068"'Remove this unused "TAG" private field.(«ó¿—

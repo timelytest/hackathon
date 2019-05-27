@@ -1,7 +1,10 @@
 
-zsquid:S1450"WRemove the "listView" field and declare it as a local variable in the relevant methods.(¯¤½ñûÿÿÿÿ8ËÑ  ¯-
-isquid:CommentedOutCodeLine+"<This block of commented-out lines of code should be removed.(£ìÍ·8Ì›ó˜¯-
-xsquid:S1450"ZRemove the "mSearchView" field and declare it as a local variable in the relevant methods.(ß²ú8ËÑ  ¯-
-usquid:S00117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êµÈòùÿÿÿÿ8ËÑ  ¯-
-isquid:CommentedOutCodeLine/"<This block of commented-out lines of code should be removed.(Ú†Æá8Ì›ó˜¯-
-nsquid:CommentedOutCodeLine("<This block of commented-out lines of code should be removed.(ô¨ÓÉÿÿÿÿÿ8Ì›ó˜¯-
+€squid:UselessImportCheck"VRemove this unused import 'com.example.cainiaoxiaozu.util.http.services.LoginService'.(·Îõ/8ÑÂ¹«¯-
+isquid:CommentedOutCodeLine0"<This block of commented-out lines of code should be removed.(£ìÍ·8Ì›ó˜¯-
+squid:UselessImportCheck"VRemove this unused import 'com.example.cainiaoxiaozu.ui.activity.login.LoginActivity'.(Ø¥ä€8Æ¬Õ«¯-
+isquid:CommentedOutCodeLine4"<This block of commented-out lines of code should be removed.(Ú†Æá8Ì›ó˜¯-
+bsquid:UselessImportCheck"2Remove this unused import 'android.widget.Filter'.(ëªôÍùÿÿÿÿ8ûçÕ«¯-
+nsquid:CommentedOutCodeLine-"<This block of commented-out lines of code should be removed.(ô¨ÓÉÿÿÿÿÿ8Ì›ó˜¯-
+osquid:S00117'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÒÜÀ8Ìåšª¯-
+`squid:UselessImportCheck"6Remove this unused import 'android.widget.Filterable'.(ô…éJ8ûçÕ«¯-
+xsquid:S1450"ZRemove the "mSearchView" field and declare it as a local variable in the relevant methods.(ß²ú8ËÑ  ¯-

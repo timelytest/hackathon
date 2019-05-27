@@ -1,0 +1,14 @@
+
+ysquid:S1450"\Remove the "mRadioButton2" field and declare it as a local variable in the relevant methods.(¢Ëµ8ä²úª¯-
+Nsquid:S1068"0Remove this unused "mRadioButton" private field.(×à˜8½èíª¯-
+‹squid:UselessImportCheck"[Remove this unused import 'com.example.cainiaoxiaozu.util.http.command.login.LoginCommand'.(¡ö’›ÿÿÿÿÿ8Ö·È®¯-
+wsquid:S1450"[Remove the "linearLayout" field and declare it as a local variable in the relevant methods.(Ãîìêúÿÿÿÿ
+squid:UselessImportCheck"VRemove this unused import 'com.example.cainiaoxiaozu.ui.activity.login.LoginActivity'.(Ø¥ä€8‰šÅ®¯-
+nsquid:CommentedOutCodeLine6"<This block of commented-out lines of code should be removed.(´åÛüÿÿÿÿ8ÄŸ¸´¯-
+ysquid:S1450"[Remove the "mRadioButton" field and declare it as a local variable in the relevant methods.(×à˜8ä²úª¯-
+Lsquid:S1068"0Remove this unused "linearLayout" private field.(Ãîìêúÿÿÿÿ
+>squid:S1185$"(Remove this method to simply inherit it.(¥Ë©
+zsquid:S1450!"]Remove the "mButtonSubmmit" field and declare it as a local variable in the relevant methods.(Ó­Ši8šç¹®¯-
+Nsquid:S1068"1Remove this unused "mRadioButton2" private field.(¢Ëµ8½èíª¯-
+Csquid:S1068"'Remove this unused "TAG" private field.(ƒ•°‚ûÿÿÿÿ
+€squid:UselessImportCheck"VRemove this unused import 'com.example.cainiaoxiaozu.util.http.services.LoginService'.(·Îõ/8ÅÑ¾®¯-

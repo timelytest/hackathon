@@ -1,0 +1,8 @@
+
+nsquid:S1301^"KReplace this "switch" statement by "if" statements to increase readability.(×ö³–úÿÿÿÿ8‹±ª©¯-
+isquid:CommentedOutCodeLine;"<This block of commented-out lines of code should be removed.(¥„îÆ8¨·­©¯-
+dsquid:UselessImportCheck"4Remove this unused import 'android.widget.TextView'.(„Ë‚ˆÿÿÿÿÿ8¸ù£«¯-
+~squid:S1450#"[Remove the "mButtonPhoto" field and declare it as a local variable in the relevant methods.(‹…€ÿÿÿÿÿ8¹¦¨¨¯-
+Psquid:S1199a"-Extract this nested code block into a method.(ðÁ–Óûÿÿÿÿ8¹‰ü©¯-
+|squid:S1450""^Remove the "mButtonRegister" field and declare it as a local variable in the relevant methods.(§ïê8û­ƒª¯-
+xsquid:S1450$"URemove the "mImage" field and declare it as a local variable in the relevant methods.(¸ÿÊáüÿÿÿÿ8¦Ñ—©¯-

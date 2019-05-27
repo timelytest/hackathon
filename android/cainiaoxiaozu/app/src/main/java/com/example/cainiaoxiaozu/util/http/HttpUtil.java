@@ -12,8 +12,8 @@ import retrofit2.Retrofit;
 
 public class HttpUtil {
 
-    private static String baseUrl = "http://106.15.177.146:8081/";
-    //private static String baseUrl = "http://localhost:8081/";
+    //private static String baseUrl = "http://106.15.177.146:8081/";
+    private static String baseUrl = "http://127.0.0.1:8081/";
 
     /**
      * 得到需要的服务接口

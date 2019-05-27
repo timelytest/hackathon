@@ -1,0 +1,5 @@
+
+¤squid:S11865"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¢´ºªüÿÿÿÿ8¤¬‰®¯-
+Hsquid:S1068"+Remove this unused "context" private field.(êÝç8ã¿Ù«¯-
+psquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢˜Úä8Ñ¿Š®¯-
+psquid:S00117#"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øõÓÿ8öà‹®¯-

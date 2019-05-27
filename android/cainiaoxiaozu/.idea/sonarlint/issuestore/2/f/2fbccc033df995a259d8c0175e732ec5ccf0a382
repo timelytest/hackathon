@@ -1,0 +1,17 @@
+
+isquid:S00117S"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®ÑÒ¶
+dsquid:S1226j"HIntroduce a new variable instead of reusing the parameter "convertView".(›°§Îúÿÿÿÿ
+`squid:UselessImportCheck"7Remove this unused import 'android.widget.FrameLayout'.(ºÍ‹Ùúÿÿÿÿ
+msquid:S1450"QRemove the "gv" field and declare it as a local variable in the relevant methods.(‹ú…Üûÿÿÿÿ
+>squid:S1185""(Remove this method to simply inherit it.(¥Ë©
+isquid:S00117S"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®ÑÒ¶
+qsquid:S1450"ZRemove the "frameLayout" field and declare it as a local variable in the relevant methods.(¿çŒˆ
+nsquid:S1450"RRemove the "hsf" field and declare it as a local variable in the relevant methods.(ÒšÇÝûÿÿÿÿ
+>squid:S1068"'Remove this unused "TAG" private field.(Œ¼Ï›
+Fsquid:S1068"/Remove this unused "frameLayout" private field.(¿çŒˆ
+Csquid:S1068"'Remove this unused "hsf" private field.(ÒšÇÝûÿÿÿÿ
+nsquid:CommentedOutCodeLineH"<This block of commented-out lines of code should be removed.(ÍÖ»´üÿÿÿÿ8±›‰´¯-
+Lsquid:S1481A".Remove this unused "itemWidth" local variable.(×¾×Œ8±›‰´¯-
+Hsquid:S1481C"+Remove this unused "params" local variable.(•¡øs8±›‰´¯-
+Wsquid:S1854C":Remove this useless assignment to local variable "params".(•¡øs8±›‰´¯-
+[squid:S1854A"=Remove this useless assignment to local variable "itemWidth".(×¾×Œ8±›‰´¯-

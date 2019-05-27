@@ -1,0 +1,8 @@
+
+Csquid:S1068"'Remove this unused "TAG" private field.(†Ì¬Öøÿÿÿÿ
+_squid:UselessImportCheck"4Remove this unused import 'android.widget.ListView'.(Œ‰Ö×8ú‘Ëª¯-
+usquid:S1450"WRemove the "mAdapter" field and declare it as a local variable in the relevant methods.(ž­ÄÉ8ÐÚÄ³¯-
+Ssquid:S1068"0Remove this unused "linearLayout" private field.(Ãîìêúÿÿÿÿ8ú‘Ëª¯-
+>squid:S1185"(Remove this method to simply inherit it.(¥Ë©
+asquid:UselessImportCheck"6Remove this unused import 'android.widget.ScrollView'.(êÑ†é8ú‘Ëª¯-
+wsquid:S1450"YRemove the "scrollView" field and declare it as a local variable in the relevant methods.(çòÀô8ú‘Ëª¯-

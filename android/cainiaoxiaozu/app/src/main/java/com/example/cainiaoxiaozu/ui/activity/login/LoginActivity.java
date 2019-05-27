@@ -43,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
                 //HttpUtil.dealCall(recommendService.getTopRewordUserListOverall(), new QuestionAnswerCommand(LoginActivity.class, mTextViewEmail));
 
                 LoginService loginService = (LoginService) HttpUtil.getService(LoginService.class);
-                HttpUtil.dealCall((loginService.login(mTextViewEmail.getText().toString(), mTextViewPassword.getText().toString())), new LoginCommand(LoginActivity.this));
+                HttpUtil.dealCall((loginService.login(mTextViewEmail.getText().toString(), mTextViewPassword.getText().toString())), new LoginCommand(LoginActivity.this, mTextViewEmail));
             }
         });
 

@@ -3,6 +3,7 @@ package com.example.cainiaoxiaozu.util.http.command.login;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.cainiaoxiaozu.ui.activity.home.HomeActivity;
@@ -24,11 +25,16 @@ public class LoginCommand extends BaseCommand {
 
     private Context context;
 
+    private TextView mTextEmail;
+
     public LoginCommand(Object... objects){
         super(objects);
         //需要操作的组件
 
+
         context = (Context) objects[0];
+        mTextEmail = (TextView) objects[1];
+
     }
 
     @Override
@@ -50,6 +56,8 @@ public class LoginCommand extends BaseCommand {
 //        LoginService loginService = (LoginService) HttpUtil.getService(LoginService.class);
 //        HttpUtil.dealCall((loginService.register(partBody)), new RegisterCommand(context));
 
+
+        mTextEmail.setText(body);
 
         Intent intent = new Intent(context, HomeActivity.class);
         context.startActivity(intent);

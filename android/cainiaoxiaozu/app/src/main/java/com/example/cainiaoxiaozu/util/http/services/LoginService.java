@@ -17,14 +17,18 @@ public interface LoginService {
      * 接口必须定义其返回值为Call<ResponseBody>
      * @return Call<ResponseBody>
      */
+
     @POST("/user/login")
     Call<ResponseBody> login(@Query("email") String email, @Query("password") String password);
 
     /**
      * 接口必须定义其返回值为Call<ResponseBody>
-     * @return Call<ResponseBody>
+     * @return Call<ResponseBody>W
      */
     @Multipart
     @POST("/user/register")
-    Call<ResponseBody> register(@Query("registerBean") RegisterBean registerBean, @Part("file") MultipartBody.Part file);
+    Call<ResponseBody> register(@Query("registerBean") RegisterBean registerBean, @Part MultipartBody.Part file);
+
+    @POST("/user/infornation")
+    Call<ResponseBody> getUserInformation(@Query("email") String email);
 }
